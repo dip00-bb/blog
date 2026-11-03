@@ -1,0 +1,1 @@
+import { listPosts, createPost } from "@/controllers/post.controller"; import { NextRequest } from "next/server"; export async function GET(req: NextRequest) { return listPosts(req); } export async function POST(req: NextRequest) { try { return await createPost(await req.json()); } catch { return Response.json({success:false,message:"Could not publish story"},{status:500}); } }

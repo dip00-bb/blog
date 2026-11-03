@@ -1,0 +1,1 @@
+import { register } from "@/controllers/auth.controller"; import { NextRequest } from "next/server"; export async function POST(req: NextRequest) { try { return await register(await req.json()); } catch { return Response.json({success:false,message:"Registration failed"},{status:500}); } }

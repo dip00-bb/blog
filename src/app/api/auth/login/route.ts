@@ -1,0 +1,1 @@
+import { login } from "@/controllers/auth.controller"; import { NextRequest } from "next/server"; export async function POST(req: NextRequest) { try { return await login(await req.json()); } catch { return Response.json({success:false,message:"Login failed"},{status:500}); } }

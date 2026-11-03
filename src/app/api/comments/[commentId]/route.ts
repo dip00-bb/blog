@@ -1,0 +1,1 @@
+import { deleteComment } from "@/controllers/comment.controller"; type Ctx={params:Promise<{commentId:string}>}; export async function DELETE(_req:Request,{params}:Ctx){return deleteComment((await params).commentId)}

@@ -1,0 +1,1 @@
+import { togglePostLike } from "@/controllers/post.controller"; type Ctx={params:Promise<{id:string}>}; export async function POST(_req:Request,{params}:Ctx){return togglePostLike((await params).id)}

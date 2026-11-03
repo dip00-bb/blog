@@ -1,0 +1,1 @@
+import { toggleCommentLike } from "@/controllers/comment.controller"; type Ctx={params:Promise<{commentId:string}>}; export async function POST(_req:Request,{params}:Ctx){return toggleCommentLike((await params).commentId)}
