@@ -11,7 +11,7 @@ A clean Next.js App Router blog with a MongoDB/Mongoose data layer, MVC-style AP
 2. Run `npm install`.
 3. Copy `.env.example` to `.env.local`.
 4. Set `MONGODB_URI`, a long random `JWT_SECRET`, and `NEXT_PUBLIC_APP_URL`.
-5. Run `npm run dev`, then open http://localhost:3000.
+5. Run `npm run dev`, then open the local URL printed in your terminal (port 3000 by default).
 
 ## MVC organization
 - `src/models`: Mongoose schemas and persistence models.
