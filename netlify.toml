@@ -1,0 +1,6 @@
+[build.environment]
+  # NEXT_PUBLIC_SITE_URL is a public, client-exposed URL (the NEXT_PUBLIC_ prefix
+  # inlines it into the browser bundle), so it is not a secret. Exclude it from
+  # Netlify's secrets scanning so builds don't fail when the URL appears in docs
+  # or source files.
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_SITE_URL"
